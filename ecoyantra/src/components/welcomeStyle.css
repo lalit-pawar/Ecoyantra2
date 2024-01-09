@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter&family=Lobster&family=Open+Sans:wght@500&family=Playfair+Display:ital,wght@1,400;1,900&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Signika:wght@500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap'); 
+
+.welcome {
+  margin: 4rem 6rem;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.para-text {
+  width: 50%; 
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.para-text h2 {
+  font-size: 1.1rem;
+}
+
+.img {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end; 
+ 
+}
+
+.img img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+/* media queries for small screens  */
+@media screen and (max-width: 850px) {
+    .welcome {
+      margin: 4rem 2rem;
+    }
+    .welcome h1{
+
+        font-size: 2rem;
+    }
+     
+    .info {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 2.5rem;
+    }
+
+  
+    .para-text {
+      width: 100%;
+      font-size: .7rem;
+      padding-top: 10px;
+    }
+    .para-text h2 {
+        font-size: 1rem;
+        padding-bottom: 15px;
+      }
+      
+    .img {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .img img {
+      width: 100%;
+      height: auto; 
+      object-fit: contain;
+    }
+  }
+
+
+  

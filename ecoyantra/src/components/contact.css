@@ -1,0 +1,63 @@
+/* Default styling */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-image {
+  width: 80%;
+}
+
+.StyledContactForm {
+  width: 80%; /* Adjust the width as needed */
+  margin: auto; /* Center the form */
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid rgba(0, 206, 158, 1);
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: rgb(249, 105, 14);
+  color: white;
+  border: none;
+}
+
+/* Responsive styling using media queries */
+@media screen and (max-width: 600px) {
+  .StyledContactForm {
+    width: 95%; /* Adjust the width for smaller screens */
+  }
+}
