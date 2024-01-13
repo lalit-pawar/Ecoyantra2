@@ -1,68 +1,120 @@
-/* Container Styles */
-.FormContainer {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Left Column Styles */
-.FormLeftColumn {
-  flex: 0 0 48%; /* 48% width with 2% space between columns */
-}
+/* Forminput.css */
 
 .Forminput {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 label {
-  display: block;
-  margin-bottom: 8px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 12px;
+  padding: 40px;
+  margin: 5px 0;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
-/* Right Column Styles */
-.FormRightColumn {
-  flex: 0 0 48%;
-}
+/* Adjust input styles as needed */
 
-/* Button Styles */
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: cyan;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+/* Add these lines to your existing CSS */
+
+input[type="submit"]:hover {
+  background-color: #00bcd4; /* Change color on hover */
+  width: 110%; /* Adjust the width for a wider hover effect */
+}
+
+input[type="submit"] {
+  /* ... existing styles ... */
+  transition: background-color 0.5s, width 0.3s; /* Add width transition */
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95); /* Add a slight scale effect on click */
+}
+
+.popup {
+  background-color: #ffffff;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.popup h2 {
+  color: #00bcd4;
+}
+
+.popup p {
+  color: #333;
+}
+
+.popup button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 600px) {
-  .FormContainer {
-    flex-direction: column;
+
+
+
+
+
+
+
+/* Media queries for responsiveness */
+
+/* Adjust styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  form {
+    width: 90%; /* Adjust form width for smaller screens */
   }
 
-  .FormLeftColumn,
-  .FormRightColumn {
-    flex: 100%;
+  input[type="submit"] {
+    width: 100%; /* Make the button full width for smaller screens */
   }
 }
+
+/* Adjust styles for screens between 600px and 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  form {
+    width: 70%; /* Adjust form width for medium-sized screens */
+  }
+}
+
+/* Adjust styles for screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+  form {
+    width: 50%; /* Adjust form width for larger screens */
+  }
+}
+
+
