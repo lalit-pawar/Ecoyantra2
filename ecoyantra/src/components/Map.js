@@ -264,11 +264,248 @@ let centerData = [
     longitude: 73.85509171417064,
   },
     
+   
   {
     id: 6,
-    name: "Techeco Ewaste Namo , Dindori",
-    latitude: 20.019687673355918,
-    longitude: 73.79503330545161,
+    name: "E-Incarnation Recycling Pvt. Ltd. palghar",
+    latitude: 19.1250724944008,
+    longitude: 72.9096132085988 ,
+  },
+
+ 
+
+  {
+    id: 7,
+    name: "Evergreen Recyclekaro india pvt ltd. palghar",
+    latitude: 19.653550173259728,
+    longitude: 73.12325658069521 ,
+  },
+
+
+
+   { id: 8,
+    name: "Justdispose Recycling Pvt Ltd palghar",
+    latitude: 19.406482207408306,
+    longitude: 72.88188645357032
+  
+  },
+
+// 20.09369246897587, 
+
+  {
+    id: 9,
+    name: "Techeco E-Waste Namo, Village Dhakambe, Tal. Dindori, Dist.Nashik",
+    latitude: 20.09369246897587,
+    longitude: 73.81031187292388 ,
+  },
+
+
+   {
+    id: 10,
+    name: "WE-The Recycling Company, Village Borpada, Tal. Bhiwandi, Dist. Thane",
+    latitude: 19.352245417931158,
+    longitude: 73.06526542373938
+  
+  },
+
+
+
+  {
+    id: 11,
+    name: "Eco Friend Industries. Navi Mumbai",
+    latitude: 19.092372529739116,
+    longitude:  73.02671799154847
+    ,
+  },
+
+
+  /********     Govermennt unauthorized */
+
+  {
+    id: 12,
+    name: "E-waste management. Mumbai",
+    latitude: 18.968355203853037,
+    longitude: 72.83821117559975
+    ,
+  }, 
+
+  {
+    id: 13,
+    name: "Right Ewaste Recycle Private Limited, Kalyan",
+    latitude:  19.376215876226503,
+    longitude:  73.14539097295768
+    ,
+  },
+
+  {
+    id: 14,
+    name: "Eco Friend Industries. Navi Mumbai ",
+    latitude: 19.092372529739116,
+    longitude:  73.02671799154847
+    ,
+  },
+
+  {
+    id: 15,
+    name: "Shri Krishna Colony, Chilkalthana, Aurangabad, Maharashtra",
+    latitude: 19.871533878422174,
+    longitude:  75.41207810419377
+    ,
+  },
+
+  {
+    id: 16,
+    name: "Green e-Bin E-waste Recycling , Aurangabad",
+    latitude:19.897785017981818,
+    longitude:  75.38435975238197
+    ,
+  },
+
+
+ // 
+
+  {
+    id: 17,
+    name: " PERFECT E- WASTE RECYCLERS,  Chilkalthana, Aurangabad, Maharashtra 431006",
+    latitude: 19.879133137589083,
+    longitude:  75.38242568610764
+    ,
+  },
+
+ /******** Gujrat  */
+
+
+  {
+    id: 18,
+    name: "REART RECYCLING PRIVATE LIMITED, Khambha, Gujarat 360311",
+    latitude:   22.237624354853526,
+    longitude:  70.72903945105293
+    ,
+  },
+
+  
+  
+  {
+    id: 19,
+    name: "Ezzy recycling center, Ranchhod Nagar, Rajkot, Gujarat 360003",
+    latitude:  22.54236677958548,
+    longitude:  70.80825801551518
+    ,
+  },
+
+// 
+
+  {
+    id: 20,
+    name: "REART RECYCLING PRIVATE LIMITED, Khambha, Gujarat 360311",
+    latitude:   22.237624354853526,
+    longitude:  70.72903945105293
+    ,
+  },
+
+
+// , 
+
+  {
+    id: 21,
+    name: "ECS e Waste Recycle Plant,Virpur Rd, Vautha, Gujarat 387810",
+    latitude:   22.83631308598462,
+    longitude:  72.5331115346694
+    ,
+  },
+
+//, 
+
+  {
+    id: 22,
+    name: "E-frontline Recycling, Panoli, Ankleshwar, Gujarat 394116",
+    latitude:   21.647809745983047,
+    longitude: 72.9933438483561
+    ,
+  },
+
+
+
+  // , 
+
+  {
+    id: 23,
+    name: "Electro Alloys Recycling & Transformation HUB,Palej, Dist Bharuch, Palej, Gujarat",
+    latitude:   22.095183490910866,
+    longitude:  73.07144162710742
+    ,
+  },
+
+
+  /********    Karnataka */
+
+  //, 
+  {
+    id: 24,
+    name: "Ewaste Hub, Oppo Hombegowda Ground, Wilson Garden, Bengaluru, Karnataka 560027",
+    latitude:  12.97101985211428,
+    longitude: 77.59818037891952
+    ,
+  },
+
+
+
+  //, 
+  {
+    id: 25,
+    name: "Rashi E-Waste, Arehalli Guddadahalli, Karnataka 561205",
+    latitude:  13.31554283511214,
+    longitude:  77.56428600739014
+    ,
+  },
+
+//, 
+  {
+    id: 26,
+    name: "Best E-waste Recyclers  VasanthNarsapura,, Kora, Karnataka 572128",
+    latitude: 13.5734108411017,
+    longitude: 77.02875136305867
+    ,
+  },
+
+//
+
+  {
+    id: 27,
+    name: "E-FRIENDLY WASTE RECYCLERS,  Nayanda Halli, Bengaluru, Karnataka 560039",
+    latitude:  12.952225447398593,
+    longitude: 77.52511063982568
+  },
+
+
+  /****  Delhi */
+// ,
+  {
+    id: 28,
+    name: "Global E Waste Collection Point, E Waste Recycler, Naharpur Village Rd, Sector 7, Rohini, Delhi 110085",
+    latitude:  28.72310910217763,
+    longitude:   77.11339691111071
+    ,
+  },
+
+//
+
+  {
+    id: 29,
+    name: "E-waste recycling company, Pushp Vihar, New Delhi, Delhi 110017",
+    latitude: 28.53637319679635,
+    longitude:  77.21991518878059
+    ,
+  },
+
+  // , 
+
+  {
+    id: 30,
+    name: "E-Waste Recyclers India,Pocket C, Okhla Phase I, Okhla, New Delhi 110020",
+    latitude:  28.543117214069614,
+    longitude:  77.28108694831542
+    ,
   },
 
 
