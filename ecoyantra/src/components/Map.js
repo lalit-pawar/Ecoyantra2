@@ -263,13 +263,12 @@ let centerData = [
     latitude: 18.468698936380147,
     longitude: 73.85509171417064,
   },
-
-  // dummy 
+    
   {
     id: 6,
-    name: "trimbak mandir",
-    latitude: 19.93436821278449,
-    longitude: 73.53088640226473,
+    name: "Techeco Ewaste Namo , Dindori",
+    latitude: 20.019687673355918,
+    longitude: 73.79503330545161,
   },
 
 
