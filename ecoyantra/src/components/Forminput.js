@@ -37,6 +37,8 @@ const Formdata = () =>{
     },
   });
 
+  const [isPopupVisible, setPopupVisibility] = useState(false);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     if (type === 'checkbox') {
@@ -60,12 +62,24 @@ const Formdata = () =>{
     }
   };
 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission, e.g., send data to the server or perform other actions
     console.log(formData);
+    setPopupVisibility(true);
   };
 
+  const Popup = () => (
+    <div className="popup">
+    <h2>Details Submitted Successfully!</h2>
+    <p>
+      Thank you for contributing to our e-waste recycling program. Your cash
+      points will be added to your account.
+    </p>
+    <button onClick={() => setPopupVisibility(true)}>Close</button>
+  </div>
+  );
   return (
 
     <>
@@ -120,14 +134,14 @@ const Formdata = () =>{
        <label>Ram</label>
       <input
         type="text"
-        name="Ram"
+        name="ram"
         value={formData.ram}
         onChange={handleChange}
       />
        <label>Storage</label>
       <input
         type="text"
-        name="Storage"
+        name="storage"
         value={formData.storage}
         onChange={handleChange}
       />
@@ -142,29 +156,10 @@ const Formdata = () =>{
 <label>Operating System</label>
       <input
         type="text"
-        name="Operating System"
+        name="operatingSystem"
         value={formData.operatingSystem}
         onChange={handleChange}
       />
-
-{/* batteryCapacity: '',
-    wifi: false,
-    bluetooth: false,
-    ports: [],
-    camera: '',
-    audio: '',
-    video: '',
-    color: '',
-    weight: '',
-    dimensions: '',
-    touchscreen: false,
-    fingerprintSensor: false,
-    faceRecognition: false,
-    specialFeatures: [],
-    price: 0,
-    availability: true, */}
-
-
 
 
 
@@ -211,7 +206,7 @@ const Formdata = () =>{
 <label> Audio</label>
       <input
         type="text"
-        name="Audio"
+        name="audio"
         value={formData.audio}
         onChange={handleChange}
       />
@@ -226,43 +221,33 @@ const Formdata = () =>{
 <label> color</label>
       <input
         type="text"
-        name="category"
-        value={formData.category}
+        name="color"
+        value={formData.color}
         onChange={handleChange}
       />
 
 <label> weight</label>
       <input
         type="text"
-        name="category"
-        value={formData.category}
+        name="weight"
+        value={formData.weight}
         onChange={handleChange}
       />
 
 
-      <label>Seller Name</label>
-      <input
-        type="text"
-        name="sellerInformation.sellername"
-        value={formData.sellerInformation.sellername}
-        onChange={handleChange}
-      />
 
-      <label>Seller Mobile Number</label>
-      <input
-        type="number"
-        name="sellerInformation.seller_mob_number"
-        value={formData.sellerInformation.seller_mob_number}
-        onChange={handleChange}
-      />
+     
      
      <div style={{ marginTop: '20px' }}>
         <input type="submit" value="Send" />
       </div>
+
+
+      {isPopupVisible && <Popup />}
       
     </form>
 
-
+    
       </>
     );
   };
